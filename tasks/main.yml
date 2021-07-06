@@ -1,0 +1,10 @@
+---
+# tasks file for apache2
+- name: Uninstall  git on ubuntu 
+  apt:
+     pkg: git
+     state: absent
+- name: copying files
+  copy:
+     src: roles.txt
+     dest: /home/ansible/
